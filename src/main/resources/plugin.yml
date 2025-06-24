@@ -1,0 +1,13 @@
+name: HeadPlugin
+version: '1.4'
+main: dev.finley.HeadPlugin
+api-version: '1.21'
+authors: [ finleyjoel1 ]
+description: HeadPlugin - Recode (2025)
+website: https://www.spigotmc.org/resources/head-plugin.108237/
+
+commands:
+  head:
+    description: Command to give/get a head
+    aliases:
+      - kopf

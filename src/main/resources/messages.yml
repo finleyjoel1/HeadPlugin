@@ -1,0 +1,237 @@
+languages: [ "de", "en", "ru", "tr" ]
+
+settings:
+  translateUsage: true
+  defaultUsageLanguage: en
+
+languageHeads: #base64 codes
+  de: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWU3ODk5YjQ4MDY4NTg2OTdlMjgzZjA4NGQ5MTczZmU0ODc4ODY0NTM3NzQ2MjZiMjRiZDhjZmVjYzc3YjNmIn19fQ=="
+  en: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVlNWM4NTBhZmJiN2Q4ODQzMjY1YTE0NjIxMWFjOWM2MTVmNzMzZGNjNWE4ZTIxOTBlNWMyNDdkZWEzMiJ9fX0="
+  ru: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZlYWZlZjk4MGQ2MTE3ZGFiZTg5ODJhYzRiNDUwOTg4N2UyYzQ2MjFmNmE4ZmU1YzliNzM1YTgzZDc3NWFkIn19fQ=="
+  tr: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTg1MmI5YWJhMzQ4MjM0ODUxNGMxMDM0ZDBhZmZlNzM1NDVjOWRlNjc5YWU0NjQ3Zjk5NTYyYjVlNWY0N2QwOSJ9fX0="
+
+de:
+  name: "&cDeutsch"
+  error:
+    noPermission: "Dazu hast du keine Rechte!"
+    language:
+      notFound: "Die Sprache konnte nicht gefunden werden!"
+      already: "Du hast diese Sprache bereits ausgewählt!"
+    permission:
+      already: "Du hast diese Berechtigung bereits ausgewählt!"
+    playerNotFound: "Dieser Spieler konnte nicht gefunden. :sad_cat:"
+  success:
+    gaveHead:
+      self: "Du hast den Kopf von %head% erhalten!"
+      target: "Du hast den Spieler den Kopf von %head% gegeben."
+    language:
+      set: "Du hast erfolgreich die Sprache von %old% zu %language% geändert!"
+    permission:
+      set: "Du hast erfolgreich die Berechtigung von %old% zu %new% geändert!"
+  waiting:
+    menu: "Warte auf Menü Berechtigung..."
+    command: "Warte auf Befehls Berechtigung..."
+  usage:
+    message:
+      '0': '     %prefix%     '
+      '1': "§d"
+      '2': '%command% &8<&7oeffnemenu&8>'
+      '3': '%command% &8<&7sprache&8> &8<&7ziel&8>'
+      '4': '%command% &8<&7geben&8> &8<&7kopfname&8>'
+      '5': '%command% &8<&7geben&8> &8<&7kopfname&8> &8<&7spielername&8>'
+      '6': "§d"
+      '7': '     %prefix%     '
+    usages: [ "geben", "oeffnemenu", "sprache" ] # Eine Änderung dieser Reihenfolge könnte die Verwendungsmöglichkeiten (für diese Sprache) zunichte machen.
+  gui:
+    settings:
+      name: "%prefix% &f&lMenü" # Es ist wichtig das der Prefix in dem Namen steht
+      items:
+        languageItem:
+          name: "&f&lSprache"
+          description: "Ändere die ausgewählte Sprache"
+        configItem:
+          name: "&f&lKonfiguration"
+          description: "Ändere die Konfiguration"
+    language:
+      name: "%prefix% &f&lSprache" # Es ist wichtig das der Prefix in dem Namen steht
+    config:
+      name: "%prefix% &f&lKonfiguration" # Es ist wichtig das der Prefix in dem Namen steht
+      items:
+        configItem:
+          name: "&f&lKonfiguration"
+        permissions:
+          commandItem:
+            name: "&f&lBefehl"
+            description: "%permission%"
+          guiItem:
+            name: "&f&lMenü"
+            description: "%permission%"
+en:
+  name: "&bEnglish"
+  error:
+    noPermission: "You don't have permission to do that!"
+    language:
+      notFound: "The language could not be found!"
+      already: "You have already selected this language!"
+    permission:
+      already: "You have already selected this permission!"
+    playerNotFound: "This player could not be found. :sad_cat:"
+  success:
+    gaveHead:
+      self: "You have received the head of %head%!"
+      target: "You gave the player the head of %head%."
+    language:
+      set: "You have successfully changed the language from %old% to %language%!"
+    permission:
+      set: "You have successfully changed the permission from %old% to %new%!"
+  waiting:
+    menu: "Waiting for menu permission..."
+    command: "Waiting for command permission..."
+  usage:
+    message:
+      '0': '     %prefix%     '
+      '1': "§d"
+      '2': '%command% &8<&7opengui&8>'
+      '3': '%command% &8<&7language&8> &8<&7target&8>'
+      '4': '%command% &8<&7give&8> &8<&7headname&8>'
+      '5': '%command% &8<&7give&8> &8<&7headname&8> &8<&7playername&8>'
+      '6': "§d"
+      '7': '     %prefix%     '
+    usages: [ "give", "opengui", "language" ] # Changing this order could ruin the usages
+  gui:
+    settings:
+      name: "%prefix% &f&lGui" # It is important that the prefix is in the name
+      items:
+        languageItem:
+          name: "&f&lLanguage"
+          description: "Change the selected language"
+        configItem:
+          name: "&f&lConfig"
+          description: "Change the config"
+    language:
+      name: "%prefix% &f&lLanguage" # It is important that the prefix is in the name
+    config:
+      name: "%prefix% &f&lConfiguration"
+      items:
+        configItem:
+          name: "&f&lConfiguration"
+        permissions:
+          commandItem:
+            name: "&f&lCommand"
+            description: "%permission%"
+          guiItem:
+            name: "&f&lMenu"
+            description: "%permission%"
+ru:
+  name: "&bРусский"
+  error:
+    noPermission: "У вас нет на это разрешения!"
+    language:
+      notFound: "Язык не найден!"
+      already: "Вы уже выбрали этот язык!"
+    permission:
+      already: "Вы уже выбрали это разрешение!"
+    playerNotFound: "Этот игрок не найден. :sad_cat:"
+  success:
+    gaveHead:
+      self: "Вы получили голову %head%!"
+      target: "Вы дали игроку голову %head%."
+    language:
+      set: "Вы успешно изменили язык с %old% на %language%!"
+    permission:
+      set: "Вы успешно изменили разрешение с %old% на %new%!"
+  waiting:
+    menu: "Ожидание разрешения на меню..."
+    command: "Ожидание разрешения на команду..."
+  usage:
+    message:
+      '0': '     %prefix%     '
+      '1': "§d"
+      '2': '%command% &8<&7Меню&8>'
+      '3': '%command% &8<&7язык&8> &8<&7Цель&8>'
+      '4': '%command% &8<&7дать&8> &8<&7имя руководителя&8>'
+      '5': '%command% &8<&7дать&8> &8<&7имя руководителя&8> &8<&7имя игрока&8>'
+      '6': "§d"
+      '7': '     %prefix%     '
+    usages: [ "дать", "Меню", "язык" ] # Изменение этого порядка может испортить использование (для этого языка)
+  gui:
+    settings:
+      name: "%prefix% &f&lМеню" # Важно, чтобы префикс был в имени.
+      items:
+        languageItem:
+          name: "&f&lязык"
+          description: "Изменение выбранного языка"
+        configItem:
+          name: "&f&lконфигурация"
+          description: "Уменьшить конфигурацию"
+    language:
+      name: "%prefix% &f&lязык" # Важно, чтобы префикс был в имени.
+    config:
+      name: "%prefix% &f&lКонфигурация"
+      items:
+        configItem:
+          name: "&f&lКонфигурация"
+        permissions:
+          commandItem:
+            name: "&f&lКоманда"
+            description: "%permission%"
+          guiItem:
+            name: "&f&lМеню"
+            description: "%permission%"
+tr:
+  name: "&cTürkçe"
+  error:
+    noPermission: "Bunu yapmak için iznin yok!"
+    language:
+      notFound: "Dil bulunamadı!"
+      already: "Bu dili zaten seçtiniz!"
+    permission:
+      already: "Bu izni zaten seçtiniz!"
+    playerNotFound: "Bu oyuncu bulunamadı. :sad_cat:"
+    alreadyLanguage: ""
+  success:
+    gaveHead:
+      self: "%head%'nın kafasını aldınız!"
+      target: "Oyuncuya bir kafa yüzdesi verdiniz."
+    language:
+      set: "Dili %old% yerine %language% olarak başarıyla değiştirdiniz!"
+    permission:
+      set: "İzni başarıyla %old% değerinden %new% değerine değiştirdiniz!"
+  waiting:
+    menu: "Menü izni bekleniyor..."
+    command: "Komut izni bekleniyor..."
+  usage:
+    message:
+      '0': '     %prefix%     '
+      '1': "§d"
+      '2': '%command% &8<&7gui&8>'
+      '3': '%command% &8<&7DİL&8> &8<&7Amaç&8>'
+      '4': '%command% &8<&7ver&8> &8<&7kafa adı&8>'
+      '5': '%command% &8<&7ver&8> &8<&7kafa adı&8> &8<&7OYUN ADI&8>'
+      '6': "§d"
+      '7': '     %prefix%     '
+    usages: [ "ver", "gui", "DİL" ] # Bu sırayı değiştirmek kullanımları mahvedebilir (bu dil için)
+  gui:
+    settings:
+      name: "%prefix% &f&lGui" # Ön ekin isimde olması önemlidir
+      items:
+        languageItem:
+          name: "&f&lDİL"
+          description: "Seçilen dili değiştirme"
+        configItem:
+          name: "&f&lKonfigürasyon"
+          description: "Yapılandırmayı değiştirin"
+    language:
+      name: "%prefix% &f&lDİL" # Ön ekin isimde olması önemlidir
+    config:
+      name: "%prefix% &f&lYapılandırma"
+      items:
+        configItem:
+          name: "&f&lDİL"
+        permissions:
+          commandItem:
+            name: "&f&lKomut"
+            description: "%permission%"
+          guiItem:
+            name: "&f&lMenü"
+            description: "%permission%"
